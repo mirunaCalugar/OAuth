@@ -2,7 +2,7 @@ const fs = require('fs');
 const jwt = require('jsonwebtoken');
 
 const JWT_SECRET = process.env.SECRET_JWT || 'fallbackSecret';
-const JWT_EXPIRY = '60s'; // 1 minut
+const JWT_EXPIRY = '360s'; // 1 minut
 
 function getClients() {
   const data = fs.readFileSync('oauth.txt', 'utf8');

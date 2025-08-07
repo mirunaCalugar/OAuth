@@ -9,6 +9,7 @@ const connectDB = require('./config/db');
 const app = express();
 connectDB();
 
+// eslint-disable-next-line no-undef
 const PORT = process.env.PORT || 3000;
 
 // Middleware

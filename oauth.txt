@@ -1,0 +1,2 @@
+client123:secret456
+adminClient:superSecret

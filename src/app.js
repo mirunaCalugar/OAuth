@@ -4,8 +4,11 @@ require('dotenv').config();
 
 const oauthRoutes = require('./routes/oauth');
 const dataRoutes = require('./routes/tasks');
+const connectDB = require('./config/db');
 
 const app = express();
+connectDB();
+
 const PORT = process.env.PORT || 3000;
 
 // Middleware
